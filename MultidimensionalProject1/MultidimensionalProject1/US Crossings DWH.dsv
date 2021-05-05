@@ -1,0 +1,176 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7d5f676d-7bce-4a0a-8e63-9387ec36f19e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>US Crossings DWH</ID>
+  <Name>US Crossings DWH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>US Crossings DWH</DataSourceID>
+  <Schema>
+    <xs:schema id="US_x0020_Crossings_x0020_DWH" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="US_x0020_Crossings_x0020_DWH" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="9de46868-d9b6-48dd-9184-6080b8d1c63d">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_d_Date" msprop:design-time-name="fd8b9601-168b-484f-8966-5c81ee39bce2" msprop:DbTableName="d_Date" msprop:FriendlyName="d_Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateID" msprop:design-time-name="6bdef32f-f309-45cc-86c7-ee0308cfefe6" msprop:DbColumnName="DateID" msprop:FriendlyName="DateID" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="ff1a5fbf-cf88-4862-b29c-18c9dfb09d29" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="Year" msprop:design-time-name="b7f4dc89-24bb-4492-8a0c-79c013a6c69d" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" />
+                  <xs:element name="Quarter" msprop:design-time-name="5e17485d-1e5f-4384-9977-9036ca9f242b" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:int" />
+                  <xs:element name="Month" msprop:design-time-name="2ac5f69a-1a3c-4fe6-a601-3e92621cc5d4" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" />
+                  <xs:element name="halfyear" msprop:design-time-name="0541e76a-51f1-4801-bf3d-7f38abbb0b9d" msprop:DbColumnName="halfyear" msprop:FriendlyName="halfyear" type="xs:int" />
+                  <xs:element name="quarterdesc_hr" msprop:design-time-name="422542e6-45e1-42cc-8dfb-9576ec823d05" msprop:DbColumnName="quarterdesc_hr" msprop:FriendlyName="quarterdesc_hr" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="quarterdesc_en" msprop:design-time-name="855ce787-384b-4c14-9d5c-63e1b8a6695c" msprop:DbColumnName="quarterdesc_en" msprop:FriendlyName="quarterdesc_en" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="monthdesc_hr" msprop:design-time-name="02d5c364-a121-4bbd-99c6-1a18023ae0e9" msprop:DbColumnName="monthdesc_hr" msprop:FriendlyName="monthdesc_hr" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="monthdesc_en" msprop:design-time-name="efa14ad6-3eba-4d62-a84a-9f90f12b3a4b" msprop:DbColumnName="monthdesc_en" msprop:FriendlyName="monthdesc_en" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_d_Location" msprop:design-time-name="f7d5ce80-5669-413d-ad46-1eb4655c9117" msprop:DbTableName="d_Location" msprop:FriendlyName="d_Location" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="LocationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="40cc8af0-8638-4bd5-8b10-1307d4609e5f" msprop:DbColumnName="LocationID" msprop:FriendlyName="LocationID" type="xs:int" />
+                  <xs:element name="BorderName" msprop:design-time-name="b44e3d3f-db5b-462a-9000-3ac90875d69c" msprop:DbColumnName="BorderName" msprop:FriendlyName="BorderName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StateName" msprop:design-time-name="ecf58ba7-7edc-4b44-8430-d770e36de5b4" msprop:DbColumnName="StateName" msprop:FriendlyName="StateName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PortCode" msprop:design-time-name="056cdbda-21a0-4026-a37e-2d2236a96136" msprop:DbColumnName="PortCode" msprop:FriendlyName="PortCode" type="xs:int" />
+                  <xs:element name="PortName" msprop:design-time-name="84e00afc-b9ad-460d-b875-c38fb0a64c2d" msprop:DbColumnName="PortName" msprop:FriendlyName="PortName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_d_ModeOfTransport" msprop:design-time-name="e7e0eb77-39e7-42eb-a79c-9d959d7edd88" msprop:DbTableName="d_ModeOfTransport" msprop:FriendlyName="d_ModeOfTransport" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MoTID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b6ac11ed-18d6-4691-9da1-3bbe5709baa2" msprop:DbColumnName="MoTID" msprop:FriendlyName="MoTID" type="xs:int" />
+                  <xs:element name="MoTName" msprop:design-time-name="d670445b-242a-4768-bc5d-1d506cfbcfab" msprop:DbColumnName="MoTName" msprop:FriendlyName="MoTName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_f_Crossings" msprop:design-time-name="36c3c79b-41ba-4d41-81bb-4c33e5091a6c" msprop:DbTableName="f_Crossings" msprop:FriendlyName="f_Crossings" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CrossingsID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="61e2ee39-5fcf-4dc8-a7f0-33f117ed80d7" msprop:DbColumnName="CrossingsID" msprop:FriendlyName="CrossingsID" type="xs:int" />
+                  <xs:element name="LocationID" msprop:design-time-name="d17d71f9-5acf-4f4a-8297-eff66d9b4b09" msprop:DbColumnName="LocationID" msprop:FriendlyName="LocationID" type="xs:int" />
+                  <xs:element name="MoTID" msprop:design-time-name="034fe9fc-154c-4d48-9431-37d11fb259f8" msprop:DbColumnName="MoTID" msprop:FriendlyName="MoTID" type="xs:int" />
+                  <xs:element name="DateID" msprop:design-time-name="8b555fc3-dcc8-4d95-9e00-06c12d456e4c" msprop:DbColumnName="DateID" msprop:FriendlyName="DateID" type="xs:int" />
+                  <xs:element name="Value" msprop:design-time-name="c882b687-e069-4f90-82ea-5b5e9d069fd1" msprop:DbColumnName="Value" msprop:FriendlyName="Value" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_d_Date" />
+          <xs:field xpath="DateID" />
+        </xs:unique>
+        <xs:unique name="dbo_d_Location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_d_Location" />
+          <xs:field xpath="LocationID" />
+        </xs:unique>
+        <xs:unique name="dbo_d_ModeOfTransport_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_d_ModeOfTransport" />
+          <xs:field xpath="MoTID" />
+        </xs:unique>
+        <xs:unique name="dbo_f_Crossings_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_f_Crossings" />
+          <xs:field xpath="CrossingsID" />
+        </xs:unique>
+        <xs:keyref name="FK_f_Crossings_d_Location" refer="dbo_d_Location_Constraint1">
+          <xs:selector xpath=".//dbo_f_Crossings" />
+          <xs:field xpath="LocationID" />
+        </xs:keyref>
+        <xs:keyref name="FK_f_Crossings_d_Date" refer="Constraint1">
+          <xs:selector xpath=".//dbo_f_Crossings" />
+          <xs:field xpath="DateID" />
+        </xs:keyref>
+        <xs:keyref name="FK_f_Crossings_d_ModeOfTransport" refer="dbo_d_ModeOfTransport_Constraint1">
+          <xs:selector xpath=".//dbo_f_Crossings" />
+          <xs:field xpath="MoTID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <US_x0020_Crossings_x0020_DWH xmlns="" />
+  </Schema>
+</DataSourceView>
